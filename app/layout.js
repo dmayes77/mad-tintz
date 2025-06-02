@@ -1,5 +1,9 @@
+import Footer from "@/components/ui/Footer";
+import NavBar from "@/components/ui/NavBar";
+import { businessInfo as business } from "@/content/businessInfo";
+import { navItems } from "@/content/navigation";
+import "@/styles/globals.css";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,7 +24,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+        <NavBar />
+        <main>{children}</main>
+        <Footer content={{ navItems, business }} />
       </body>
     </html>
   );
