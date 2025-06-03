@@ -44,7 +44,7 @@ export default function Footer() {
         <div>
           <div className="flex flex-col items-center laptop:items-start text-center laptop:text-left space-y-4">
             <CloudImage
-              publicId={logo.main.publicId}
+              publicId={logo.badge.publicId}
               alt={logo.main.alt}
               ratio={1} // 3:1 aspect
               className="w-48"

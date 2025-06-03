@@ -8,9 +8,9 @@
 // Business Info
 export const businessInfo = {
   name: "MAD Tintz",
-  tagline: "Vision Meets Function",
+  tagline: "Automotive, Residential, Commerccial",
   description:
-    "Based in Chattanooga, TN, Code Maze Web Design crafts eye‑catching, user‑friendly websites that not only look great but perform beautifully. We build on a foundation of SEO best practices—ensuring your site ranks where it matters—and round out our services with print‑design and social‑media expertise to give your brand a cohesive, multi‑channel presence.",
+    "Get MAD Tintz – Chattanooga’s mobile window tinting pros for cars, homes & businesses. Enhance privacy, reduce heat & boost style with expert, on-site installation.",
   phone: "(423) 497-0881",
   email: "info@getmadpro.com",
   website: "https://www.getmadpro.com",
@@ -47,29 +47,18 @@ export const businessInfo = {
 
   logo: {
     main: {
-      publicId: "mad-tintz/logo-images/MAD-Tintz-logo",
-      url: "//res.cloudinary.com/mayes-auto-detailing-llc/image/upload/v1748719762/mad-tintz/logo-images/MAD-Tintz-logo.png",
+      publicId: "mad-tintz/logo-images/MAD-Tintz-logo-2",
+      url: "https://res.cloudinary.com/mayes-auto-detailing-llc/image/upload/v1748863690/mad-tintz/logo-images/MAD-Tintz-logo-2.png",
       alt: "MAD Tintz Logo",
     },
-
-    mainWhite: {
-      publicId: "pixel-n-code/logo-images/code-maze-logo-white",
-      url: "https://res.cloudinary.com/mayes-auto-detailing-llc/image/upload/v1746738303/pixel-n-code/logo-images/code-maze-logo-white.png",
-      alt: "Code Maze Logo (White)",
-    },
     badge: {
-      publicId: "pixel-n-code/logo-images/code-maze-badge",
-      url: "https://res.cloudinary.com/mayes-auto-detailing-llc/image/upload/v1746738303/pixel-n-code/logo-images/code-maze-badge.png",
-      alt: "Code Maze Badge",
-    },
-    badgeWhite: {
-      publicId: "pixel-n-code/logo-images/code-maze-badge-white",
-      url: "https://res.cloudinary.com/mayes-auto-detailing-llc/image/upload/v1746738303/pixel-n-code/logo-images/code-maze-badge-white.png",
-      alt: "Code Maze Badge (White)",
+      publicId: "mad-tintz/logo-images/MAD-Tintz-logo",
+      url: "https://res.cloudinary.com/mayes-auto-detailing-llc/image/upload/v1748719762/mad-tintz/logo-images/MAD-Tintz-logo.png",
+      alt: "MAD Tintz Logo",
     },
     logoOnly: {
-      publicId: "pixel-n-code/logo-images/code-maze-logo-only",
-      url: "https://res.cloudinary.com/mayes-auto-detailing-llc/image/upload/v1746738303/pixel-n-code/logo-images/code-maze-logo-only.png",
+      publicId: "mad-tintz/logo-images/MAD-Tintz-Mean-Face",
+      url: "https://res.cloudinary.com/mayes-auto-detailing-llc/image/upload/v1748864955/mad-tintz/logo-images/MAD-Tintz-Mean-Face.png",
       alt: "Code Maze Logo Only",
     },
   },

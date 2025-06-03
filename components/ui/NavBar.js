@@ -21,6 +21,7 @@ export default function NavBar() {
       <NavLink
         key={key ?? href}
         href={href}
+      className="text-primary-foreground"
         {...(mobile ? { onClick: closeMenu, mobile: true } : {})}
       >
         {label}
@@ -28,14 +29,14 @@ export default function NavBar() {
     ));
 
   return (
-    <header className="sticky top-0 z-50 bg-white/70 backdrop-blur-md border-b border-gray-200 shadow-md">
+    <header className="sticky top-0 z-50 bg-secondary/70 backdrop-blur-md border-b border-gray-200 shadow-md">
       <nav className="mx-auto flex max-w-7xl items-center justify-between py-3 px-6">
         {/* Logo */}
         <NextLink href="/" className="flex items-center">
           <CloudImage
             publicId={logo.main.publicId}
             alt={logo.main.alt}
-            ratio={5 / 1}
+            ratio={3 / 1}
             className="w-44 tablet:w-60"
           />
         </NextLink>
