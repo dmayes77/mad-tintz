@@ -1,5 +1,3 @@
-import TrustindexWidget from "./TrustindexWidget";
-
 export const metadata = {
   title: "Auto, Home & Commercial Tinting Chattanooga | MAD Tintz",
   description:
@@ -10,7 +8,7 @@ export default function Home() {
   return (
     <>
       <h1 className="font-bold underline">Home Page!</h1>
-      <TrustindexWidget />
+
       <p>Home Page</p>
     </>
   );

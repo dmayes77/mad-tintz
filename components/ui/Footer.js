@@ -198,10 +198,10 @@ export default function Footer() {
 
         {/* 4) Hours of Operation */}
         <div>
-          <p className="mb-4 h5  text-accent text-center fold:text-left">
+        <p className="mb-4 h5  text-accent text-center laptop:text-left">
             Service Areas
           </p>
-          <ul className="space-y-1 text-sm text-center fold:text-left">
+          <ul className="space-y-3 text-sm text-center laptop:text-left">
             {areaServed.map((area, idx) => (
               <li key={idx}>{area}</li>
             ))}
