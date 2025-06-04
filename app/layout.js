@@ -8,16 +8,12 @@ import {
 } from "@/content/businessInfo";
 import { navItems } from "@/content/navigation";
 import "@/styles/globals.css";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Roboto } from "next/font/google";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const roboto = Roboto({
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  weight: ["400", "500", "700"], // optional: adjust weights as needed
+  display: "swap",
 });
 
 export { metadata };
@@ -50,7 +46,7 @@ export default function RootLayout({ children }) {
           }}
         />
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className={roboto.className}>
         <NavBar />
         <main>{children}</main>
         <Footer content={{ navItems, business }} />

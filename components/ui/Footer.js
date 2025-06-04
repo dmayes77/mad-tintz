@@ -43,14 +43,18 @@ export default function Footer() {
         {/* 1) Logo / Tagline / Socials */}
         <div>
           <div className="flex flex-col items-center laptop:items-start text-center laptop:text-left space-y-4">
-            <CloudImage
-              publicId={logo.badge.publicId}
-              alt={logo.main.alt}
-              ratio={1} // 3:1 aspect
-              className="w-48"
-            />
-            <p className="text-sm text-primary-foreground">{tagline}</p>
-            <div className="flex space-x-4">
+            <div className="w-full">
+              <CloudImage
+                publicId={logo.badge.publicId}
+                alt={logo.main.alt}
+                ratio={1} // 3:1 aspect
+                className="w-48 mx-auto"
+              />
+            </div>
+            <p className="text-sm text-primary-foreground text-center">
+              {tagline}
+            </p>
+            <div className="flex space-x-4 mx-auto">
               {socials.facebook && (
                 <NavLink
                   href={socials.facebook}
@@ -198,7 +202,7 @@ export default function Footer() {
 
         {/* 4) Hours of Operation */}
         <div>
-        <p className="mb-4 h5  text-accent text-center laptop:text-left">
+          <p className="mb-4 h5  text-accent text-center laptop:text-left">
             Service Areas
           </p>
           <ul className="space-y-3 text-sm text-center laptop:text-left">

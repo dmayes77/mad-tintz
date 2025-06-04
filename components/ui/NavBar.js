@@ -9,7 +9,7 @@ import NavLink from "./NavLink";
 import { logo } from "@/content/businessInfo";
 import { navItems } from "@/content/navigation";
 import NextLink from "next/link";
-import Button from "./Button";
+import { Button } from "./Btn";
 
 export default function NavBar() {
   const [open, setOpen] = useState(false);
@@ -21,7 +21,7 @@ export default function NavBar() {
       <NavLink
         key={key ?? href}
         href={href}
-      className="text-primary-foreground"
+        className="text-primary-foreground"
         {...(mobile ? { onClick: closeMenu, mobile: true } : {})}
       >
         {label}
@@ -29,7 +29,7 @@ export default function NavBar() {
     ));
 
   return (
-    <header className="sticky top-0 z-50 bg-secondary/70 backdrop-blur-md border-b border-gray-200 shadow-md">
+    <header className="sticky top-0 z-50 bg-secondary/70 backdrop-blur-md  shadow-md">
       <nav className="mx-auto flex max-w-7xl items-center justify-between py-3 px-6">
         {/* Logo */}
         <NextLink href="/" className="flex items-center">
@@ -37,7 +37,7 @@ export default function NavBar() {
             publicId={logo.main.publicId}
             alt={logo.main.alt}
             ratio={3 / 1}
-            className="w-44 tablet:w-60"
+            className="w-40 tablet:w-48"
           />
         </NextLink>
         <div className="flex items-center gap-x-8">
@@ -50,13 +50,14 @@ export default function NavBar() {
             onClick={openMenu}
             aria-label="Open menu"
           >
-            <Bars3Icon className="h-6 w-6" />
+            <Bars3Icon className="text-primary-foreground h-8 w-8" />
           </button>
 
           {/*Quote Button*/}
           <Button
             href="/request-a-quote"
-            className="mobile:hidden fold:inline-flex"
+            className="mobile:hidden fold:inline-flex p uppercase"
+            size="lg"
           >
             Fast + Free Quote
           </Button>
