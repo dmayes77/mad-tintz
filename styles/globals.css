@@ -25,19 +25,19 @@
     @apply mobile:text-4xl laptop:text-5xl desktop:text-6xl font-extrabold leading-snug tracking-tight;
   }
   h2 {
-    @apply mobile:text-2xl tablet:text-3xl laptop:text-4xl font-extrabold leading-snug tracking-tight;
+    @apply text-3xl font-extrabold leading-snug tracking-tight;
   }
   h3 {
-    @apply mobile:text-xl tablet:text-2xl laptop:text-3xl desktop:text-4xl font-bold leading-snug tracking-tight;
+    @apply text-2xl font-bold leading-snug tracking-tight;
   }
   h4 {
-    @apply mobile:text-lg tablet:text-xl laptop:text-2xl desktop:text-3xl font-semibold leading-snug tracking-tight;
+    @apply text-xl font-semibold leading-snug tracking-tight;
   }
   h5 {
-    @apply mobile:text-base tablet:text-lg laptop:text-xl desktop:text-2xl font-semibold leading-snug tracking-tight;
+    @apply text-lg font-semibold leading-snug tracking-tight;
   }
   h6 {
-    @apply mobile:text-sm tablet:text-base laptop:text-lg desktop:text-xl font-semibold leading-snug tracking-tight;
+    @apply text-base font-semibold leading-snug tracking-tight;
   }
   p,
   ul {

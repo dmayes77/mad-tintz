@@ -1,13 +1,18 @@
 export const navItems = [
   {
-    label: "Window Tint",
+    label: "Auto Window Tint",
     key: "windowTint",
     href: "/services/automotive-window-tinting",
   },
   {
-    label: "Home and Office Window Tinting",
+    label: "Home Window Tint",
     key: "homeAndOfficeWindowTinting",
-    href: "/services/home-and-office-window-tinting",
+    href: "/services/residential-window-tinting",
+  },
+  {
+    label: "Office Window Tint",
+    key: "homeAndOfficeWindowTinting",
+    href: "/services/commercial-window-tinting",
   },
   { label: "About", key: "about", href: "/about" },
 ];

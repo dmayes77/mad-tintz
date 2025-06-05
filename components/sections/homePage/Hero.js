@@ -30,7 +30,7 @@ export default function Hero() {
         </h1>
         <p className="text-gray-100 max-w-xl">
           Our mobile window tinting service solves heat, glare, and privacy
-          issues fast — at your home or business.
+          issues fast — for your vehicle, at your home or business.
         </p>
         <Link href="/services">
           <ShimmerButton
