@@ -1,7 +1,7 @@
 // components/homepage/FeatureListSection.jsx
 import React from "react";
 import { IoHomeOutline } from "react-icons/io5";
-import FeatureCard from "@/components/ui/FeatureCard";
+import FeatureCard from "@/components/ui/FeatureCardIcon";
 
 const content = {
   title:
