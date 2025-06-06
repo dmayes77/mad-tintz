@@ -1,5 +1,5 @@
 // components/homepage/FeatureSection.jsx
-import ServiceCard from "@/components/ui/Card";
+import ServiceCard from "@/components/ui/ServiceCard";
 import React from "react";
 
 const content = {
