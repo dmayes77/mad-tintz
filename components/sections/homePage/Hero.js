@@ -8,7 +8,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden flex flex-col items-center justify-center h-[50svh] laptop:h-[75svh]">
+    <section className="relative overflow-hidden flex flex-col items-center justify-center h-[75svh]">
       {/* Background Image */}
       <Image
         src="https://res.cloudinary.com/mayes-auto-detailing-llc/image/upload/v1749058331/mad-tintz/hero-images/car-at-collidge-park.png"
@@ -23,7 +23,7 @@ export default function Hero() {
 
       {/* Text Content */}
       <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-4 space-y-4">
-        <h1 className="text-white font-normal!">
+        <h1 className="text-white">
           Too Much Sun, No Privacy?
           <br /> We Tint It Right —{" "}
           <AuroraText className="uppercase font-semibold">Wherever You Are.</AuroraText>

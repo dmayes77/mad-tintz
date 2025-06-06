@@ -18,11 +18,11 @@ export default function ServiceCard({
         {...props}
       >
         <CardHeader className="p-0">
-          <div className="relative w-full aspect-square overflow-hidden">
+          <div className="relative w-full  overflow-hidden">
             <CloudImage
               publicId={imageId}
               alt={imageAlt}
-              fill
+              ratio={3 / 2}
               objectFit="cover"
               className="w-full h-full"
             />
@@ -32,10 +32,10 @@ export default function ServiceCard({
         <CardBody className="flex flex-col flex-1 px-4 pt-4 pb-6 bg-primary/10">
           <div className="space-y-4 flex-1">
             <h4 className="text-lg font-bold group-hover:underline">{title}</h4>
-            <p className="text-sm text-gray-600">{body}</p>
+            <p className=" text-gray-600">{body}</p>
           </div>
 
-          <div className="mt-auto pt-4 flex items-center text-red-600 font-medium">
+          <div className="mt-auto pt-4 flex items-center text-accent font-medium">
             Learn More
             <svg
               xmlns="http://www.w3.org/2000/svg"

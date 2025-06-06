@@ -2,7 +2,7 @@
 import ServiceCard from "@/components/ui/Card";
 import React from "react";
 
-const section = {
+const content = {
   title:
     "Explore Our Premium Window Tinting Services for Ultimate Protection and Style",
   description:
@@ -42,12 +42,12 @@ export default function FeatureListSection() {
   return (
     <section className="max-w-7xl mx-auto px-4 lg:px-8 py-16 space-y-8">
       <div className="grid grid-cols-1 tablet:grid-cols-2 gap-8">
-        <h2>{section.title}</h2>
-        <p>{section.description}</p>
+        <h2>{content.title}</h2>
+        <p>{content.description}</p>
       </div>
 
       <div className="grid grid-cols-1 tablet:grid-cols-3 gap-6">
-        {section.cards.map((card, index) => (
+        {content.cards.map((card, index) => (
           <ServiceCard
             key={index}
             imageId={card.imageId}
