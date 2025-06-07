@@ -3,7 +3,7 @@ import React from "react";
 import Link from "next/link";
 import { PiCaretRightBold } from "react-icons/pi";
 
-export default function FeatureCard({
+export default function FeatureCardIcon({
   title,
   icon: IconComponent,
   subtitle,
@@ -11,8 +11,8 @@ export default function FeatureCard({
   linkHref,
 }) {
   return (
-    <div className="flex flex-col items-center text-center space-y-4 p-6 bg-white rounded-lg shadow-md">
-      {IconComponent && <IconComponent className="h-15 w-15 text-lime-600" />}
+    <div className="flex flex-col items-center text-center space-y-8 p-6 bg-white">
+      {IconComponent && <IconComponent className="h-15 w-15 text-accent" />}
       {title && (
         <h2 className="text-xl sm:text-2xl font-semibold text-gray-900">
           {title}
@@ -26,7 +26,7 @@ export default function FeatureCard({
       {linkHref && linkText && (
         <Link
           href={linkHref}
-          className="flex items-center gap-2 text-blue-600 hover:underline"
+          className="flex items-center gap-2 text-accent hover:underline"
         >
           {linkText}
           <PiCaretRightBold />

@@ -22,14 +22,14 @@ const content = {
       text: "Service You Can Count On",
     },
   ],
-}
+};
 
 export default function StatsSection() {
   return (
     <section className="max-w-7xl mx-auto px-4 lg:px-8 py-16">
       <div className="grid grid-cols-1 tablet:grid-cols-2 gap-8">
         <div className="space-y-8">
-          <h4 className="text-lime-600 uppercase tracking-wider">
+          <h4 className="text-accent uppercase tracking-wider">
             {content.preTitle}
           </h4>
           <h2 className="text-gray-900">{content.title}</h2>
@@ -62,7 +62,7 @@ export default function StatsSection() {
         {content.reasons.map((reason, idx) => (
           <div
             key={idx}
-            className="flex flex-col items-start space-y-2 text-left border-l-6 border-l-lime-600 pl-8"
+            className="flex flex-col items-start space-y-2 text-left border-l-6 border-l-accent pl-8"
           >
             <span className="text-7xl font-semibold">{reason.label}</span>
             <p>{reason.text}</p>

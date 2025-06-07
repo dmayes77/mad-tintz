@@ -4,7 +4,7 @@ import ServiceCard from "@/components/ui/ServiceCard";
 
 export default function FeatureList({ title, description, cards }) {
   return (
-    <section className="max-w-7xl mx-auto px-4 lg:px-8 py-16 space-y-8">
+    <>
       {/* Title + Description */}
       <div className="grid grid-cols-1 tablet:grid-cols-2 gap-8">
         {title && (
@@ -30,6 +30,6 @@ export default function FeatureList({ title, description, cards }) {
           ))}
         </div>
       )}
-    </section>
+    </>
   );
 }

@@ -1,38 +1,39 @@
 // components/homepage/FeatureListSection.jsx
 import React from "react";
 import { IoHomeOutline } from "react-icons/io5";
+import { HiOutlineBuildingOffice2 } from "react-icons/hi2";
+import { IoCarSportOutline } from "react-icons/io5";
 import FeatureCard from "@/components/ui/FeatureCardIcon";
 
 const content = {
-  title:
-    "Transform Your Ride with Our Premium Automotive Window Tinting Services",
+  title: "Transform Your Style with Our Window Tinting Services",
   cards: [
+    {
+      icon: IoCarSportOutline,
+      title:
+        "Discover the Benefits of Professional Window Tinting for All Spaces",
+      subtitle:
+        "Our automotive window tinting not only elevates your vehicle's aesthetics but also protects against harmful UV rays.",
+      linkText: "Learn More",
+      linkHref: "/services/automotive-window-tinting",
+    },
     {
       icon: IoHomeOutline,
       title:
         "Enhance Your Home’s Comfort and Style with Residential Window Tinting",
       subtitle:
-        "Our automotive window tinting not only elevates your vehicle's aesthetics but also protects against harmful UV rays.",
+        "Our expert team ensures flawless installation, delivering style and protection for every environment.",
       linkText: "Learn More",
-      linkHref: "/services/automotive-window-tint",
+      linkHref: "/services/residential-window-tinting",
     },
     {
-      icon: IoHomeOutline,
+      icon: HiOutlineBuildingOffice2,
       title:
         "Boost Your Business Appeal with Commercial Window Tinting Solutions",
       subtitle:
         "Commercial window tinting enhances privacy, reduces glare, and improves energy efficiency for your business.",
       linkText: "Learn More",
-      linkHref: "/services/commercial-window-tint",
-    },
-    {
-      icon: IoHomeOutline,
-      title:
-        "Discover the Benefits of Professional Window Tinting for All Spaces",
-      subtitle:
-        "Our expert team ensures flawless installation, delivering style and protection for every environment.",
-      linkText: "Learn More",
-      linkHref: "/services/residential-window-tint",
+      linkHref: "/services/commercial-window-tinting",
     },
   ],
 };

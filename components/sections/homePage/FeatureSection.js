@@ -47,7 +47,7 @@ export default function FeatureSection() {
         <div className="grid grid-cols-1 laptop:grid-cols-2 gap-6 items-center">
           {/* == LEFT COLUMN: Text + Icon List == */}
           <div className="space-y-8">
-            <h4 className="text-lime-600 uppercase tracking-wider">
+            <h4 className="text-accent uppercase tracking-wider">
               {content.preTitle}
             </h4>
             <h2 className="text-gray-900">{content.title}</h2>
@@ -61,7 +61,7 @@ export default function FeatureSection() {
                       className={`h-10 w-10 rounded-full flex items-center justify-center ${
                         idx === 1
                           ? "bg-accent text-accent-foreground"
-                          : "bg-lime-600 text-white"
+                          : "bg-accent text-white"
                       }`}
                     >
                       <svg

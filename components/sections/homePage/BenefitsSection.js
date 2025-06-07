@@ -40,7 +40,7 @@ export default function BenefitsSection() {
         <div className="grid grid-cols-1 laptop:grid-cols-2 gap-6 items-center">
           {/* == LEFT COLUMN: Text + Icon List == */}
           <div className="space-y-8">
-            <h4 className="text-lime-600 uppercase tracking-wider">
+            <h4 className="text-accent uppercase tracking-wider">
               {content.preTitle}
             </h4>
             <h2 className="text-gray-900">{content.title}</h2>
