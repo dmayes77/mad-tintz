@@ -10,6 +10,7 @@ import { logo } from "@/content/businessInfo";
 import { navItems } from "@/content/navigation";
 import NextLink from "next/link";
 import { Button } from "./Btn";
+import Link from "next/link";
 
 export default function NavBar() {
   const [open, setOpen] = useState(false);
@@ -21,7 +22,7 @@ export default function NavBar() {
       <NavLink
         key={key ?? href}
         href={href}
-        className="text-primary-foreground"
+        className="text-accent laptop:text-accent-foreground"
         {...(mobile ? { onClick: closeMenu, mobile: true } : {})}
       >
         {label}
@@ -55,11 +56,11 @@ export default function NavBar() {
 
           {/*Quote Button*/}
           <Button
-            href="/request-a-quote"
+            asChild
             className="mobile:hidden fold:inline-flex p uppercase"
             size="lg"
           >
-            Fast + Free Quote
+           <Link href="/request-a-quote" > Fast + Free Quote</Link>
           </Button>
         </div>
       </nav>
