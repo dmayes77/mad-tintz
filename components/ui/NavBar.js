@@ -37,8 +37,8 @@ export default function NavBar() {
           <CloudImage
             publicId={logo.main.publicId}
             alt={logo.main.alt}
-            ratio={3 / 1}
-            className="w-40 tablet:w-48"
+            ratio={2 / 1}
+            className="w-28 tablet:w-36"
           />
         </NextLink>
         <div className="flex items-center gap-x-8">

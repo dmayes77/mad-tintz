@@ -19,29 +19,70 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground font-sans;
+    @apply bg-background text-foreground;
+  }
+  html {
+    @apply text-base font-sans antialiased;
   }
   h1 {
-    @apply mobile:text-4xl laptop:text-5xl desktop:text-6xl leading-snug tracking-tight;
+    @apply mobile:text-[1.875rem]   /* 30px */
+      fold:text-[2.25rem]      /* 36px */
+      tablet:text-[2.5rem]     /* 40px */
+      laptop:text-[3rem]       /* 48px */
+      leading-snug
+      tracking-tight;
   }
+
   h2 {
-    @apply text-2xl laptop:text-3xl leading-snug tracking-tight;
+    @apply mobile:text-[1.5rem]     /* 24px */
+      fold:text-[1.75rem]      /* 28px */
+      tablet:text-[2rem]       /* 32px */
+      laptop:text-[2.25rem]    /* 36px */
+      leading-snug
+      tracking-tight;
   }
+
   h3 {
-    @apply text-xl laptop:text-2xl leading-snug tracking-tight;
+    @apply mobile:text-[1.25rem]    /* 20px */      /* 24px */
+      tablet:text-[1.5rem]    /* 28px */
+      laptop:text-[1.875rem]       /* 32px */
+      leading-snug
+      tracking-tight;
   }
+
   h4 {
-    @apply text-xl leading-snug tracking-tight;
+    @apply mobile:text-[1rem]       /* 16px */
+      fold:text-[1.125rem]     /* 18px */
+      tablet:text-[1.25rem]    /* 20px */
+      leading-snug
+      tracking-tight;
   }
+
   h5 {
-    @apply text-lg leading-snug tracking-tight;
+    @apply mobile:text-[0.875rem]   /* 14px */
+      fold:text-[1rem]         /* 16px */
+      tablet:text-[1.125rem]   /* 18px */
+      leading-snug
+      tracking-tight;
   }
+
   h6 {
-    @apply text-base leading-snug tracking-tight;
+    @apply mobile:text-[0.75rem]    /* 12px */
+      fold:text-[0.875rem]     /* 14px */
+      tablet:text-[1rem]       /* 16px */
+      leading-snug
+      tracking-tight;
   }
+
   p,
   ul {
-    @apply mobile:text-base tablet:text-lg desktop:text-lg leading-snug tracking-wide;
+    @apply mobile:text-base         /* 16px */
+      fold:text-base           /* 16px */
+      tablet:text-lg           /* 18px */
+      laptop:text-lg           /* 18px */
+      desktop:text-lg          /* 18px */
+      leading-snug
+      tracking-wide;
   }
   main {
     @apply min-h-screen;
@@ -240,10 +281,4 @@
 }
 
 @layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
 }
