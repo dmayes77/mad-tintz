@@ -34,13 +34,20 @@ const packages = [
     imageId: "mad-tintz/service-images/windshield-strip",
     imageAlt: "Sun-strip applied to the top edge of the windshield",
   },
+  {
+    name: "Sunroof Tint",
+    description:
+      "Tint your sunroof or moonroof to reduce overhead glare and heat.",
+    imageId: "mad-tintz/service-images/sunroof-tint",
+    imageAlt: "Sunroof or moonroof glass tinted for heat and glare reduction",
+  },
 ];
 
 export default function PackagesSection() {
   return (
     <section id="packages" className="max-w-7xl mx-auto px-4 lg:px-8 py-16 space-y-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2>Our Tint Packages</h2>
+        <h2>Our Window Tint Installation Services</h2>
         <div className="grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 gap-6 text-center">
           {packages.map((pkg) => (
             <div

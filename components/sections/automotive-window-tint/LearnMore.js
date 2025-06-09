@@ -7,7 +7,7 @@ export default function TintLearnMoreSection() {
       className="max-w-7xl mx-auto px-4 lg:px-8 py-16 space-y-8"
     >
      
-        <h2 className="font-bold text-gray-900">
+        <h2 className="font-semibold text-gray-900">
           Learn More About Window Tinting
         </h2>
         <p className="text-gray-700">

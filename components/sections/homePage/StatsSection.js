@@ -64,7 +64,7 @@ export default function StatsSection() {
             key={idx}
             className="flex flex-col items-start space-y-2 text-left border-l-6 border-l-accent pl-8"
           >
-            <span className="text-7xl font-semibold">{reason.label}</span>
+            <span className="text-5xl tablet:text-6xl laptop:text-7xl font-semibold">{reason.label}</span>
             <p>{reason.text}</p>
           </div>
         ))}
