@@ -1,6 +1,7 @@
 // components/PackagesSection.jsx
 import CloudImage from "@/components/ui/CloudImage";
 import React from "react";
+import { Badge } from "@/components/ui/Badge";
 
 const packages = [
   {
@@ -45,9 +46,11 @@ const packages = [
 
 export default function PackagesSection() {
   return (
-    <section id="packages" className="max-w-7xl mx-auto px-4 lg:px-8 py-16 space-y-8">
+    <section id="packages" className="max-w-7xl mx-auto px-4 lg:px-8 space-y-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2>Our Window Tint Installation Services</h2>
+        <Badge variant="header" className="mb-8 text-wrap!">
+          Our Window Film Installation Services
+        </Badge>
         <div className="grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 gap-6 text-center">
           {packages.map((pkg) => (
             <div
@@ -63,7 +66,6 @@ export default function PackagesSection() {
               />
               <h3>{pkg.name}</h3>
               <p className="text-gray-600 ">{pkg.description}</p>
-              
             </div>
           ))}
         </div>

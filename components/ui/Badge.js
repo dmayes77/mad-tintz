@@ -14,6 +14,8 @@ const badgeVariants = cva(
         danger:
           "bg-gradient-to-br from-destructive/60 via-destructive/40 to-destructive/20 text-white",
         mute: "bg-gradient-to-br from-gray-400 via-gray-300 to-gray-200 text-gray-800",
+        header:
+          "bg-gradient-to-br from-accent via-accent/70 to-accent text-accent-foreground h2 py-6!",
       },
       size: {
         default: "h-9 text-sm",

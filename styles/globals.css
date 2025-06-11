@@ -255,7 +255,12 @@
   @apply mobile:text-3xl tablet:text-4xl laptop:text-5xl desktop:text-6xl font-extrabold leading-snug tracking-tight;
 }
 .h2 {
-  @apply mobile:text-2xl tablet:text-3xl laptop:text-4xl desktop:text-5xl font-extrabold leading-snug tracking-tight;
+  @apply mobile:text-[1.5rem]     /* 24px */
+      fold:text-[1.75rem]      /* 28px */
+      tablet:text-[2rem]       /* 32px */
+      laptop:text-[2.25rem]    /* 36px */
+      leading-snug
+      tracking-tight;
 }
 .h3 {
   @apply mobile:text-xl tablet:text-2xl laptop:text-3xl desktop:text-4xl font-bold leading-snug tracking-tight;

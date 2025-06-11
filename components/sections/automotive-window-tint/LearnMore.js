@@ -1,12 +1,13 @@
 import React from "react";
+import CloudImage from "@/components/ui/CloudImage";
 
 export default function TintLearnMoreSection() {
   return (
     <section
       id="learn-more"
-      className="max-w-7xl mx-auto px-4 lg:px-8 py-16 space-y-8"
+      className="max-w-7xl mx-auto py-16 px-4 gap-4 grid-cols-1 laptop:grid-cols-2 grid items-center"
     >
-     
+      <div className="w-full space-y-8 px-2">
         <h2 className="font-semibold text-gray-900">
           Learn More About Window Tinting
         </h2>
@@ -41,7 +42,16 @@ export default function TintLearnMoreSection() {
           film options? Scroll down to find the perfect package for your vehicle
           and schedule your appointment today.
         </p>
-     
+      </div>
+      <div className="w-full">
+        <CloudImage
+          publicId="mad-tintz/service-images/learn-more-window-tint"
+          alt="Automotive window tint installation in progress, showcasing a technician applying nano-ceramic film to a car window"
+          ratio={1}
+          className="w-full rounded-2xl shadow-lg overflow-hidden mobile:aspect-video! laptop:aspect-3/4! desktop:aspect-square!"
+          objectFit="cover"
+        />
+      </div>
     </section>
   );
 }
