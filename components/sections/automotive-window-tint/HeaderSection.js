@@ -14,7 +14,7 @@ const content = {
 
 export default function HeaderSection() {
   return (
-    <section className="max-w-7xl h-[40svh] mx-auto px-4 lg:px-8 py-16 items-center text-center flex flex-col gap-8">
+    <section className="max-w-7xl h-[40svh] mx-auto px-4 lg:px-8 py-16 items-center text-center flex flex-col gap-8 bg-gradient-to-b from-white to-transparent">
       <h1 className="font-semibold uppercase">{content.title}</h1>
       <p>{content.description}</p>
       <div className="flex flex-row flex-wrap justify-center gap-4">

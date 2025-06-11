@@ -25,7 +25,7 @@ export default function TintComparisonSection() {
   return (
     <section
       id={content.sectionId}
-      className="py-16 bg-[#F0FDF4]"
+      className="py-16 bg-gradient-to-b from-transparent to-[#F0FDF4]"
       aria-labelledby={`${content.sectionId}-heading`}
     >
       <div className="max-w-5xl mx-auto text-center px-4">

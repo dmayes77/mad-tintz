@@ -9,12 +9,12 @@ import BackgroundShape from "@/components/ui/BackgroundShape";
 export default function WindowTintPage() {
   return (
     <>
-      <HeaderSection />
       <DotPattern>
+        <HeaderSection />
         <TintLearnMoreSection />
         <FeaturesSection />
+        <TintComparisonSection />
       </DotPattern>
-      <TintComparisonSection />
       <BackgroundShape>
         <PackagesSection />
       </BackgroundShape>

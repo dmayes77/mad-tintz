@@ -48,9 +48,9 @@ export default function PackagesSection() {
   return (
     <section id="packages" className="max-w-7xl mx-auto px-4 lg:px-8 space-y-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <Badge variant="header" className="mb-8 text-wrap!">
+        <h2 className="inline-flex rounded-full mb-8 bg-gradient-to-br from-accent via-accent/70 to-accent text-accent-foreground h2 py-2 px-4 text-center">
           Our Window Film Installation Services
-        </Badge>
+        </h2>
         <div className="grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 gap-6 text-center">
           {packages.map((pkg) => (
             <div
