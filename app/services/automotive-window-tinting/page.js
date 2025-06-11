@@ -3,21 +3,28 @@ import PackagesSection from "@/components/sections/automotive-window-tint/Packag
 import TintLearnMoreSection from "@/components/sections/automotive-window-tint/LearnMore";
 import TintComparisonSection from "@/components/sections/automotive-window-tint/TintComparisonSection";
 import FeaturesSection from "@/components/sections/automotive-window-tint/FeatureSection";
-import DotPattern from "@/components/ui/DotPattern";
+import PatternBackground from "@/components/ui/PatternBackground";
 import BackgroundShape from "@/components/ui/BackgroundShape";
+import HowItWorksSection from "@/components/sections/automotive-window-tint/HowItWorksSection";
+import WarrantySection from "@/components/sections/automotive-window-tint/WarrantySection";
+import CTASection from "@/components/sections/automotive-window-tint/CTASection";
 
 export default function WindowTintPage() {
   return (
     <>
-      <DotPattern>
+      <PatternBackground variant="dots" speed={0.5} patternColor="#F0FDF4">
         <HeaderSection />
-        <TintLearnMoreSection />
         <FeaturesSection />
+        <TintLearnMoreSection />
+        <HowItWorksSection />
         <TintComparisonSection />
-      </DotPattern>
-      <BackgroundShape>
-        <PackagesSection />
-      </BackgroundShape>
+
+        <BackgroundShape>
+          <PackagesSection />
+          <WarrantySection />
+        </BackgroundShape>
+        <CTASection />
+      </PatternBackground>
     </>
   );
 }
