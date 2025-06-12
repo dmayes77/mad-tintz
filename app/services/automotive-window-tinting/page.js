@@ -8,11 +8,17 @@ import BackgroundShape from "@/components/ui/BackgroundShape";
 import HowItWorksSection from "@/components/sections/automotive-window-tint/HowItWorksSection";
 import WarrantySection from "@/components/sections/automotive-window-tint/WarrantySection";
 import CTASection from "@/components/sections/automotive-window-tint/CTASection";
+import WhatWeOfferSection from "@/components/sections/automotive-window-tint/WhatWeOfferSection";
+import FilmDetailsSection from "@/components/sections/automotive-window-tint/FilmDetailsSection";
 
 export default function WindowTintPage() {
   return (
     <>
-      <PatternBackground variant="dots" speed={0.5} patternColor="#F0FDF4CC">
+      <PatternBackground
+        variant="dots"
+        speed={0.5}
+        patternColorClass="text-lime-200"
+      >
         <HeaderSection />
         <FeaturesSection />
         <TintLearnMoreSection />
@@ -20,6 +26,8 @@ export default function WindowTintPage() {
         <TintComparisonSection />
 
         <BackgroundShape>
+          <WhatWeOfferSection />
+          <FilmDetailsSection/>
           <PackagesSection />
           <WarrantySection />
         </BackgroundShape>

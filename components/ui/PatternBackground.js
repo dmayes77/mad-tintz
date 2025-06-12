@@ -15,7 +15,7 @@ export default function PatternBackground({
   children,
   variant = "dots",
   speed = 0.5,
-  patternColorClass = "text-accent/15",
+  patternColorClass = "text-accent/30",
 }) {
   const svgRef = useRef(null);
   const [offset, setOffset] = useState(0);
