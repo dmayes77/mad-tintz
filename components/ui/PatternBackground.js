@@ -6,16 +6,16 @@ import React, { useState, useEffect, useRef } from "react";
  * PatternBackground
  * Wraps any children with a subtle SVG pattern background that can parallax.
  * @param {Object} props
- * @param {React.ReactNode} props.children - Content to render above the pattern
+ * @param {React.ReactNode} props.children - Content rendered above the pattern
  * @param {"dots"|"stripes"|"crosshatch"|"hex"|"waves"|"triangles"} props.variant - Pattern variant
  * @param {number} props.speed - Parallax speed multiplier (0 for fixed)
- * @param {string} props.patternColor - CSS color string for the pattern (defaults to current text color)
+ * @param {string} props.patternColorClass - Tailwind class for SVG color (e.g., 'text-accent/15')
  */
 export default function PatternBackground({
   children,
   variant = "dots",
   speed = 0.5,
-  patternColor = "currentColor",
+  patternColorClass = "text-accent/15",
 }) {
   const svgRef = useRef(null);
   const [offset, setOffset] = useState(0);
@@ -135,10 +135,9 @@ export default function PatternBackground({
     <div className="relative overflow-hidden">
       <svg
         ref={svgRef}
-        className="absolute inset-0 w-full h-full"
+        className={`absolute inset-0 w-full h-full ${patternColorClass}`}
         style={{
           transform: speed > 0 ? `translateY(${offset * speed}px)` : "none",
-          color: patternColor,
         }}
         aria-hidden="true"
         preserveAspectRatio="none"

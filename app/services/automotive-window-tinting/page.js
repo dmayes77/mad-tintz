@@ -12,7 +12,7 @@ import CTASection from "@/components/sections/automotive-window-tint/CTASection"
 export default function WindowTintPage() {
   return (
     <>
-      <PatternBackground variant="dots" speed={0.5} patternColor="#F0FDF4">
+      <PatternBackground variant="dots" speed={0.5} patternColor="#F0FDF4CC">
         <HeaderSection />
         <FeaturesSection />
         <TintLearnMoreSection />
