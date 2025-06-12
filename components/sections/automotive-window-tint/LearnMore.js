@@ -5,7 +5,7 @@ export default function TintLearnMoreSection() {
   return (
     <section
       id="learn-more"
-      className="max-w-7xl mx-auto py-16 px-4 gap-4 grid-cols-1 laptop:grid-cols-2 grid items-center"
+      className="max-w-7xl mx-auto py-16 px-4 gap-4 grid-cols-1 laptop:grid-cols-2 grid items-center bg-gradient-to-b from-transparent via-white/90 to-transparent"
     >
       <div className="w-full space-y-8 px-2">
         <h2 className="font-semibold text-gray-900">

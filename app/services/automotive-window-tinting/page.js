@@ -17,7 +17,7 @@ export default function WindowTintPage() {
       <PatternBackground
         variant="dots"
         speed={0.5}
-        patternColorClass="text-lime-200"
+        patternColorClass="text-lime-400"
       >
         <HeaderSection />
         <FeaturesSection />

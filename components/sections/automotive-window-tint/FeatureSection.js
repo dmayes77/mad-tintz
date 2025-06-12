@@ -14,14 +14,11 @@ export default function FeaturesSection() {
   return (
     <section
       id="tint-features"
-      className="py-16"
+      className="py-16 bg-gradient-to-b from-transparent via-white/90 to-transparent"
       aria-labelledby="tint-features-heading"
     >
       <div className="max-w-4xl mx-auto px-4 text-center">
-        <h2
-          id="tint-features-heading"
-          className="font-semibold text-gray-800"
-        >
+        <h2 id="tint-features-heading" className="font-semibold text-gray-800">
           Why Choose Our Ceramic Window Tint
         </h2>
         <p className="mt-4 text-gray-600">

@@ -16,7 +16,7 @@ export default function HowItWorksSection() {
   return (
     <section
       id="how-it-works"
-      className="py-16 bg-gradient-to-b from-transparent via-white to-transparent"
+      className="py-16 bg-gradient-to-b from-transparent via-white/90 to-transparent"
       aria-labelledby="how-it-works-heading"
     >
       <div className="max-w-4xl mx-auto px-4 text-center">

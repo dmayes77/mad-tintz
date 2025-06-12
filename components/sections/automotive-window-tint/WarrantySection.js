@@ -13,7 +13,7 @@ export default function WarrantySection() {
       className="py-16  max-w-7xl mx-auto px-4 lg:px-8 space-y-8"
       aria-labelledby="warranty-heading"
     >
-      <div className="relative overflow-hidden bg-gray-50 max-w-4xl mx-auto text-center p-8 rounded-2xl border border-accent/50">
+      <div className="relative overflow-hidden bg-white/60 max-w-4xl mx-auto text-center p-8 rounded-2xl border border-accent/50">
         <div className="flex items-center justify-center mb-4">
           <ShieldCheck className="w-8 h-8 text-accent" />
         </div>
