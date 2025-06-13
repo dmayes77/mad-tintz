@@ -64,12 +64,7 @@ export default function WarrantySection() {
           </li>
         </ul>
 
-        <a
-          href="/contact"
-          className="mt-8 inline-block px-6 py-3 bg-accent text-white rounded-lg hover:bg-accent/80 transition"
-        >
-          Learn More About Warranty
-        </a>
+        
         <BorderBeam
           duration={6}
           size={800}

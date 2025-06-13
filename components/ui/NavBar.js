@@ -1,8 +1,7 @@
-// components/NavBar.jsx
 "use client";
 
 import { useState, Fragment } from "react";
-import { Transition } from "@headlessui/react";
+import { Transition, Menu } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import CloudImage from "./CloudImage";
 import NavLink from "./NavLink";
@@ -17,20 +16,8 @@ export default function NavBar() {
   const openMenu = () => setOpen(true);
   const closeMenu = () => setOpen(false);
 
-  const renderLinks = (mobile = false) =>
-    navItems.map(({ key, href, label }) => (
-      <NavLink
-        key={key ?? href}
-        href={href}
-        className="text-accent laptop:text-accent-foreground"
-        {...(mobile ? { onClick: closeMenu, mobile: true } : {})}
-      >
-        {label}
-      </NavLink>
-    ));
-
   return (
-    <header className="sticky top-0 z-50 bg-secondary/70 backdrop-blur-md  shadow-md">
+    <header className="sticky top-0 z-50 bg-secondary/70 backdrop-blur-md shadow-md">
       <nav className="mx-auto flex max-w-7xl items-center justify-between py-3 px-6">
         {/* Logo */}
         <NextLink href="/" className="flex items-center">
@@ -42,8 +29,56 @@ export default function NavBar() {
           />
         </NextLink>
         <div className="flex items-center gap-x-8">
-          {/* Desktop nav */}
-          <div className="hidden laptop:flex gap-x-8">{renderLinks()}</div>
+          {/* Desktop nav with dropdown for Other Services */}
+          <div className="hidden laptop:flex gap-x-8">
+            {navItems.map((item) =>
+              item.children ? (
+                <Menu as="div" className="relative" key={item.key}>
+                  <Menu.Button
+                    as={NavLink}
+                    href={item.href}
+                    className="text-accent laptop:text-accent-foreground hover:brightness-80 flex items-center"
+                  >
+                    {item.label}
+                  </Menu.Button>
+                  <Transition
+                    as={Fragment}
+                    enter="transition ease-out duration-200"
+                    enterFrom="opacity-0 translate-y-1"
+                    enterTo="opacity-100 translate-y-0"
+                    leave="transition ease-in duration-150"
+                    leaveFrom="opacity-100 translate-y-0"
+                    leaveTo="opacity-0 translate-y-1"
+                  >
+                    <Menu.Items className="absolute mt-2 w-48 bg-white shadow-lg rounded-md overflow-hidden">
+                      {item.children.map((sub) => (
+                        <Menu.Item key={sub.key}>
+                          {({ active }) => (
+                            <NavLink
+                              href={sub.href}
+                              className={`block px-4 py-2 ${
+                                active ? "bg-gray-100" : ""
+                              }`}
+                            >
+                              {sub.label}
+                            </NavLink>
+                          )}
+                        </Menu.Item>
+                      ))}
+                    </Menu.Items>
+                  </Transition>
+                </Menu>
+              ) : (
+                <NavLink
+                  key={item.key}
+                  href={item.href}
+                  className="text-accent laptop:text-accent-foreground"
+                >
+                  {item.label}
+                </NavLink>
+              )
+            )}
+          </div>
 
           {/* Mobile toggle */}
           <button
@@ -54,18 +89,18 @@ export default function NavBar() {
             <Bars3Icon className="text-primary-foreground h-8 w-8" />
           </button>
 
-          {/*Quote Button*/}
+          {/* Quote Button */}
           <Button
             asChild
-            className="mobile:hidden fold:inline-flex p uppercase"
+            className="mobile:hidden fold:inline-flex uppercase"
             size="lg"
           >
-           <Link href="/request-a-quote" > Fast + Free Quote</Link>
+            <Link href="/request-a-quote">Fast + Free Quote</Link>
           </Button>
         </div>
       </nav>
 
-      {/* Overlay container */}
+      {/* Mobile overlay */}
       <Transition.Root show={open} as={Fragment}>
         <div className="fixed inset-0 z-[60] pointer-events-none">
           {/* Backdrop fade */}
@@ -107,12 +142,37 @@ export default function NavBar() {
                     <button
                       onClick={closeMenu}
                       aria-label="Close menu"
-                      className="p-2 text-gray-700 "
+                      className="p-2 text-gray-700"
                     >
                       <XMarkIcon className="h-6 w-6" />
                     </button>
                   </div>
-                  <nav className="space-y-4">{renderLinks(true)}</nav>
+                  <nav className="space-y-4">
+                    {navItems.map((item) => (
+                      <Fragment key={item.key}>
+                        <NavLink
+                          href={item.href}
+                          mobile
+                          onClick={closeMenu}
+                          className="font-semibold"
+                        >
+                          {item.label}
+                        </NavLink>
+                        {item.children &&
+                          item.children.map((sub) => (
+                            <NavLink
+                              key={sub.key}
+                              href={sub.href}
+                              mobile
+                              onClick={closeMenu}
+                              className="ml-4"
+                            >
+                              {sub.label}
+                            </NavLink>
+                          ))}
+                      </Fragment>
+                    ))}
+                  </nav>
                 </div>
               </div>
             </Transition.Child>

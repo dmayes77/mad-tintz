@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Badge } from "@/components/ui/Badge";
 
 const content = {
-  title: "Chattanooga Automotive Tinting",
+  title: "Automotive Window Tinting in Chattanooga",
   description:
     "Experience the ultimate in protection and style with our high-end ceramic window film in Chattanooga.",
   buttonText1: "Learn More",

@@ -9,7 +9,7 @@ export default function CTASection() {
   return (
     <section
       id="cta"
-      className="py-16 h-[40svh] text-accent relative overflow-hidden"
+      className="py-8 h-[40svh] text-accent relative overflow-hidden"
       aria-labelledby="cta-heading"
     >
       <div className="absolute inset-0 bg-gradient-to-b from-[#F0FDF4] to-transparent"></div>
