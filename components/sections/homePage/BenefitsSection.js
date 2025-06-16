@@ -3,16 +3,18 @@ import React from "react";
 import CloudImage from "@/components/ui/CloudImage";
 import { Button } from "@/components/ui/Btn";
 import NextLink from "next/link";
+import { pageLinks as links } from "@/content/navigation";
 
 const content = {
   preTitle: "Convenience",
   title: "Experience the Ultimate in Window Tinting",
   description:
     "Our premium window tinting services provide unparalleled heat and UV protection, ensuring your comfort and safety. Enjoy a stylish look that enhances your vehicle, home, or business while benefiting from our convenient on-site service.",
-  btnHref: "/services",
-  btnText: "Learn More",
-  linkHref: "/",
-  linkText: "Schedule Now",
+  btnHref: links.automotive.href,
+  btnText: links.automotive.label,
+  linkHref: links.booking.href,
+  linkText: links.booking.label,
+  imageSrc: "/images/benefits/1.jpg",
   imageId: "mad-tintz/foto-images/ChatGPT_Image_Jun_4_2025_08_32_16_PM_rkvxf8",
   imageAlt: "Appliance & Headlight Wrap Preview",
   imageRatio: 4 / 3,

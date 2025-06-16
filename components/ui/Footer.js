@@ -21,7 +21,7 @@ import {
   businessInfo as business,
   hoursOfOperation as formattedHours,
 } from "@/content/businessInfo";
-import { navItems } from "@/content/navigation";
+import { navItems, policyLinks } from "@/content/navigation";
 
 export default function Footer() {
   const {
@@ -131,26 +131,26 @@ export default function Footer() {
             ))}
             <li>
               <NavLink
-                href="/policies/privacy-policy"
+                href={policyLinks.privacyPolicy.href}
                 className="text-white text-sm! hover:text-accent"
               >
-                Privacy Policy
+                {policyLinks.privacyPolicy.label}
               </NavLink>
             </li>
             <li>
               <NavLink
-                href="/policies/terms-and-conditions"
+                href={policyLinks.termsConditions.href}
                 className="text-white text-sm! hover:text-accent"
               >
-                Terms &amp; Conditions
+                {policyLinks.termsConditions.label}
               </NavLink>
             </li>
             <li>
               <NavLink
-                href="/policies/mobile-service-policy"
+                href={policyLinks.mobileServicePolicy.href}
                 className="text-white text-sm! hover:text-accent"
               >
-                Mobile Service Policy
+                {policyLinks.mobileServicePolicy.label}
               </NavLink>
             </li>
           </ul>

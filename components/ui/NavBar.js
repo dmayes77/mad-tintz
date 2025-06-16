@@ -1,15 +1,14 @@
 "use client";
 
 import { useState, Fragment } from "react";
-import { Transition, Menu } from "@headlessui/react";
+import { Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import CloudImage from "./CloudImage";
 import NavLink from "./NavLink";
 import { logo } from "@/content/businessInfo";
-import { navItems } from "@/content/navigation";
 import NextLink from "next/link";
-import { Button } from "./Btn";
 import Link from "next/link";
+import { Button } from "./Btn";
 
 export default function NavBar() {
   const [open, setOpen] = useState(false);
@@ -28,56 +27,15 @@ export default function NavBar() {
             className="w-28 tablet:w-36"
           />
         </NextLink>
+
         <div className="flex items-center gap-x-8">
-          {/* Desktop nav with dropdown for Other Services */}
+          {/* Desktop nav: only three links */}
           <div className="hidden laptop:flex gap-x-8">
-            {navItems.map((item) =>
-              item.children ? (
-                <Menu as="div" className="relative" key={item.key}>
-                  <Menu.Button
-                    as={NavLink}
-                    href={item.href}
-                    className="text-accent laptop:text-accent-foreground hover:brightness-80 flex items-center"
-                  >
-                    {item.label}
-                  </Menu.Button>
-                  <Transition
-                    as={Fragment}
-                    enter="transition ease-out duration-200"
-                    enterFrom="opacity-0 translate-y-1"
-                    enterTo="opacity-100 translate-y-0"
-                    leave="transition ease-in duration-150"
-                    leaveFrom="opacity-100 translate-y-0"
-                    leaveTo="opacity-0 translate-y-1"
-                  >
-                    <Menu.Items className="absolute mt-2 w-48 bg-white shadow-lg rounded-md overflow-hidden">
-                      {item.children.map((sub) => (
-                        <Menu.Item key={sub.key}>
-                          {({ active }) => (
-                            <NavLink
-                              href={sub.href}
-                              className={`block px-4 py-2 ${
-                                active ? "bg-gray-100" : ""
-                              }`}
-                            >
-                              {sub.label}
-                            </NavLink>
-                          )}
-                        </Menu.Item>
-                      ))}
-                    </Menu.Items>
-                  </Transition>
-                </Menu>
-              ) : (
-                <NavLink
-                  key={item.key}
-                  href={item.href}
-                  className="text-accent laptop:text-accent-foreground"
-                >
-                  {item.label}
-                </NavLink>
-              )
-            )}
+            <NavLink href="/services/automotive-window-tinting">
+              Automotive Window Tint
+            </NavLink>
+            <NavLink href="/services">Other Services</NavLink>
+            <NavLink href="/about">About</NavLink>
           </div>
 
           {/* Mobile toggle */}
@@ -103,7 +61,7 @@ export default function NavBar() {
       {/* Mobile overlay */}
       <Transition.Root show={open} as={Fragment}>
         <div className="fixed inset-0 z-[60] pointer-events-none">
-          {/* Backdrop fade */}
+          {/* Backdrop */}
           <Transition.Child
             as={Fragment}
             enter="transition-opacity ease-out duration-500"
@@ -119,7 +77,7 @@ export default function NavBar() {
             />
           </Transition.Child>
 
-          {/* Slide-down panel under navbar */}
+          {/* Slide-down panel */}
           <div className="fixed inset-x-0">
             <Transition.Child
               as={Fragment}
@@ -148,30 +106,19 @@ export default function NavBar() {
                     </button>
                   </div>
                   <nav className="space-y-4">
-                    {navItems.map((item) => (
-                      <Fragment key={item.key}>
-                        <NavLink
-                          href={item.href}
-                          mobile
-                          onClick={closeMenu}
-                          className="font-semibold"
-                        >
-                          {item.label}
-                        </NavLink>
-                        {item.children &&
-                          item.children.map((sub) => (
-                            <NavLink
-                              key={sub.key}
-                              href={sub.href}
-                              mobile
-                              onClick={closeMenu}
-                              className="ml-4"
-                            >
-                              {sub.label}
-                            </NavLink>
-                          ))}
-                      </Fragment>
-                    ))}
+                    <NavLink
+                      href="/services/automotive-window-tinting"
+                      mobile
+                      onClick={closeMenu}
+                    >
+                      Automotive Window Tint
+                    </NavLink>
+                    <NavLink href="/services" mobile onClick={closeMenu}>
+                      Other Services
+                    </NavLink>
+                    <NavLink href="/about" mobile onClick={closeMenu}>
+                      About
+                    </NavLink>
                   </nav>
                 </div>
               </div>

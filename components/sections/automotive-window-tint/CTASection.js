@@ -1,5 +1,7 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/Btn";
+import Link from "next/link";
 
 /**
  * CTASection
@@ -21,13 +23,14 @@ export default function CTASection() {
           Experience unmatched comfort, style, and protection with our premium
           ceramic window tint.
         </p>
-        <a
+        <Button asChild variant="primary" sixe="lg">
+        <Link
           href="/services/window-tint"
           className="inline-flex items-center px-8 py-4 bg-white text-accent font-semibold rounded-lg shadow hover:bg-gray-100 transition"
         >
           Book Your Tint Now
           <ArrowRight className="w-5 h-5 ml-2" />
-        </a>
+        </Link></Button>
       </div>
     </section>
   );

@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/Btn";
 import Link from "next/link";
+import { pageLinks } from "@/content/navigation";
 
 const content = {
   preTitle: "Excellence",
@@ -7,9 +8,9 @@ const content = {
   description:
     "At MAD Tintz, we specialize in providing top-notch window tinting solutions that enhance comfort and style. Our expert team is dedicated to delivering exceptional quality and service for every project.",
   buttonText1: "Learn More",
-  buttonHref1: "/services",
+  buttonHref1: pageLinks.otherServices.href,
   buttonText2: "Get Started",
-  buttonHref2: "/contact",
+  buttonHref2: pageLinks.booking.href,
 };
 
 export default function HeaderSection() {

@@ -2,6 +2,7 @@
 import React from "react";
 import ContactCard from "@/components/ui/ContactCard";
 import { businessInfo as business } from "@/content/businessInfo";
+import { pageLinks as links } from "@/content/navigation";
 
 const content = {
   sections: [
@@ -53,8 +54,8 @@ const content = {
     {
       title: "Appointments",
       description: "Schedule your appointment on our Contact page.",
-      linkText: "Schedule Online",
-      linkHref: "/contact",
+      linkText: links.booking.label,
+      linkHref: links.booking.href,
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"

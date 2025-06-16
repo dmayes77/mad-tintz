@@ -1,12 +1,13 @@
 "use client";
 
+import { pageLinks as links } from "@/content/navigation";
 import Image from "next/image";
-import { Button } from "../../ui/Btn";
+import Link from "next/link";
 import { AuroraText } from "../../magicui/aurora-text";
 import { ShimmerButton } from "../../magicui/shimmer-button";
-import Link from "next/link";
 
 export default function Hero() {
+  const { otherServices } = links;
   return (
     <section className="relative overflow-hidden flex flex-col items-center justify-center h-[75svh]">
       {/* Background Image */}
@@ -26,13 +27,15 @@ export default function Hero() {
         <h1 className="text-white">
           Too Much Sun, No Privacy?
           <br /> We Tint It Right —{" "}
-          <AuroraText className="uppercase font-semibold">Wherever You Are.</AuroraText>
+          <AuroraText className="uppercase font-semibold">
+            Wherever You Are.
+          </AuroraText>
         </h1>
         <p className="text-gray-100 max-w-xl">
           Our mobile window tinting service solves heat, glare, and privacy
           issues fast — for your vehicle, at your home or business.
         </p>
-        <Link href="/services">
+        <Link href={otherServices.href}>
           <ShimmerButton
             className="uppercase p"
             shimmerSize="0.15em"

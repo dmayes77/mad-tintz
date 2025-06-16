@@ -4,6 +4,7 @@ import { IoHomeOutline } from "react-icons/io5";
 import { HiOutlineBuildingOffice2 } from "react-icons/hi2";
 import { IoCarSportOutline } from "react-icons/io5";
 import FeatureCard from "@/components/ui/FeatureCardIcon";
+import { pageLinks } from "@/content/navigation";
 
 const content = {
   title: "Transform Your Style with Our Window Tinting Services",
@@ -15,7 +16,7 @@ const content = {
       subtitle:
         "Our automotive window tinting not only elevates your vehicle's aesthetics but also protects against harmful UV rays.",
       linkText: "Learn More",
-      linkHref: "/services/automotive-window-tinting",
+      linkHref: pageLinks.automotive.href,
     },
     {
       icon: IoHomeOutline,
@@ -24,7 +25,7 @@ const content = {
       subtitle:
         "Our expert team ensures flawless installation, delivering style and protection for every environment.",
       linkText: "Learn More",
-      linkHref: "/services/residential-window-tinting",
+      linkHref: pageLinks.residential.href,
     },
     {
       icon: HiOutlineBuildingOffice2,
@@ -33,7 +34,7 @@ const content = {
       subtitle:
         "Commercial window tinting enhances privacy, reduces glare, and improves energy efficiency for your business.",
       linkText: "Learn More",
-      linkHref: "/services/commercial-window-tinting",
+      linkHref: pageLinks.commercial.href,
     },
   ],
 };

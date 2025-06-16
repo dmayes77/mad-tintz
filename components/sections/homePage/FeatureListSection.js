@@ -1,5 +1,6 @@
 // components/homepage/FeatureSection.jsx
 import FeatureList from "@/components/ui/FeatureListImages";
+import { pageLinks as links } from "@/content/navigation";
 
 const content = {
   title:
@@ -14,7 +15,7 @@ const content = {
       title:
         "Automotive Window Tinting: Style Meets Protection for Your Vehicle",
       body: "Transform your ride with our premium automotive window tinting services.",
-      href: "/automotive-tinting",
+      href: links.automotive.href,
     },
     {
       imageId:
@@ -23,7 +24,7 @@ const content = {
       title:
         "Residential Window Tinting: Enhance Comfort and Privacy in Your Home",
       body: "Create a serene living space with our residential window tinting options.",
-      href: "/residential-tinting",
+      href: links.residential.href,
     },
     {
       imageId:
@@ -32,7 +33,7 @@ const content = {
       title:
         "Commercial Window Tinting: Boost Your Business’s Aesthetic and Efficiency",
       body: "Elevate your workspace with our professional commercial window tinting services.",
-      href: "/commercial-tinting",
+      href: links.commercial.href,
     },
   ],
 };

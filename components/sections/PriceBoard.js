@@ -70,11 +70,24 @@ export default function PriceBoard() {
               <td className="px-4 py-2">$149</td>
               <td className="px-4 py-2">$209</td>
               <td className="px-4 py-2">$269</td>
-                      </tr>
-                      
+            </tr>
+            <tr>
+              <td className="px-4 py-2 text-left font-medium">
+                Tesla (All Models)
+              </td>
+              <td className="px-4 py-2"></td>
+              <td className="px-4 py-2">$539 / $669</td>
+            </tr>
+            <tr>
+              <td className="px-4 py-2 text-left font-medium">
+                Tesla (All Models with Windshield)
+              </td>
+              <td className="px-4 py-2"></td>
+              <td className="px-4 py-2">$849 / $999</td>
+            </tr>
           </tbody>
-              </table>
-              
+        </table>
+
         <h6 className="mt-4">** More than 7 pcs call for pricing</h6>
       </div>
 

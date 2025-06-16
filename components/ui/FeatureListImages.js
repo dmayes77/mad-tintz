@@ -2,7 +2,7 @@
 import React from "react";
 import ServiceCard from "@/components/ui/ServiceCard";
 
-export default function FeatureList({ title, description, cards }) {
+export default function FeatureList({ title, description, cards, links }) {
   return (
     <>
       {/* Title + Description */}
