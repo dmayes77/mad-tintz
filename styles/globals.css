@@ -76,13 +76,14 @@
 
   p,
   ul {
-    @apply mobile:text-base         /* 16px */
-      fold:text-base           /* 16px */
-      tablet:text-lg           /* 18px */
-      laptop:text-lg           /* 18px */
-      desktop:text-lg          /* 18px */
-      leading-snug
-      tracking-wide;
+    @apply mobile:text-base /* 16px */
+           fold:text-base   /* 16px */
+           tablet:text-lg   /* 18px */
+           laptop:text-lg   /* 18px */
+           desktop:text-lg  /* 18px */
+           leading-snug
+           tracking-wide
+           text-gray-600;
   }
   main {
     @apply min-h-screen;

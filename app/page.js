@@ -1,9 +1,9 @@
-import Hero from "@/components/sections/homePage/Hero";
-import FeatureListSection from "@/components/sections/homePage/FeatureListSection";
-import FeatureSection from "@/components/sections/homePage/FeatureSection";
-import BenefitsSection from "@/components/sections/homePage/BenefitsSection";
-import StatsSection from "@/components/sections/homePage/StatsSection";
-import ContactSection from "@/components/sections/homePage/ContactSection";
+import Hero from "@/components/pages/home-page/Hero";
+import FeatureListSection from "@/components/pages/home-page/FeatureListSection";
+import FeatureSection from "@/components/pages/home-page/FeatureSection";
+import BenefitsSection from "@/components/pages/home-page/BenefitsSection";
+import StatsSection from "@/components/pages/home-page/StatsSection";
+import ContactSection from "@/components/pages/home-page/ContactSection";
 import { Contact } from "lucide-react";
 
 export const metadata = {

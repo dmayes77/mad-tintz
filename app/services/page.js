@@ -1,9 +1,9 @@
-import AutomotiveFeatureSection from "@/components/sections/services/AutomotiveFeatureSection";
-import ComingSoonFeatureSection from "@/components/sections/services/ComingSoonFeatureSection";
-import CommercialFeatureSection from "@/components/sections/services/CommercialFeatureSection";
-import FeatureListSection from "@/components/sections/services/FeatureListSection";
-import HeaderSection from "@/components/sections/services/HeaderSection";
-import ResidentialFeatureSection from "@/components/sections/services/ResidentialFeatureSection";
+import AutomotiveFeatureSection from "@/components/pages/services/AutomotiveFeatureSection";
+import ComingSoonFeatureSection from "@/components/pages/services/ComingSoonFeatureSection";
+import CommercialFeatureSection from "@/components/pages/services/CommercialFeatureSection";
+import FeatureListSection from "@/components/pages/services/FeatureListSection";
+import HeaderSection from "@/components/pages/services/HeaderSection";
+import ResidentialFeatureSection from "@/components/pages/services/ResidentialFeatureSection";
 
 export const metadata = {
   title:
@@ -18,7 +18,7 @@ export default function ServicesPage() {
     <>
       <HeaderSection />
       <FeatureListSection />
-      
+
       <AutomotiveFeatureSection />
       <ResidentialFeatureSection />
       <CommercialFeatureSection />
