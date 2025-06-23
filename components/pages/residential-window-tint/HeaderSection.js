@@ -13,7 +13,7 @@ const content = {
 
 export default function HeaderSection() {
   return (
-    <section className="w-full h-[40svh] mx-auto px-4 mb-8 lg:px-8 py-16 items-center text-center flex flex-col gap-8 bg-gradient-to-b from-white to-transparent">
+    <section className="relative w-full h-[40svh] mx-auto px-4 mb-8 lg:px-8 py-16 items-center text-center flex flex-col gap-8 bg-gradient-to-b from-white to-transparent">
       <p className="text-sm text-gray-400 tracking-widest uppercase">
         {content.subtitle}
       </p>

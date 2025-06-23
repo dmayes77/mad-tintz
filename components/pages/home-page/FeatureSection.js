@@ -43,7 +43,7 @@ export default function FeatureSection() {
         </svg>
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10">
         <div className="grid grid-cols-1 laptop:grid-cols-2 gap-6 items-center">
           {/* == LEFT COLUMN: Text + Icon List == */}
           <div className="space-y-8">

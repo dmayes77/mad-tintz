@@ -78,18 +78,20 @@ const content = {
 
 export default function ContactSection() {
   return (
-    <section className="max-w-7xl mx-auto px-4 lg:px-8 py-16">
-      <div className="grid grid-cols-1 gap-6 laptop:grid-cols-3">
-        {content.sections.map((section, idx) => (
-          <ContactCard
-            key={idx}
-            icon={section.icon}
-            title={section.title}
-            description={section.description}
-            linkText={section.linkText}
-            linkHref={section.linkHref}
-          />
-        ))}
+    <section>
+      <div>
+        <div className="grid grid-cols-1 gap-6 laptop:grid-cols-3">
+          {content.sections.map((section, idx) => (
+            <ContactCard
+              key={idx}
+              icon={section.icon}
+              title={section.title}
+              description={section.description}
+              linkText={section.linkText}
+              linkHref={section.linkHref}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );

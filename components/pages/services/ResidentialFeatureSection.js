@@ -5,9 +5,9 @@ import { pageLinks } from "@/content/navigation";
 
 export default function ResidentialFeatureSection() {
   return (
-    <section className="max-w-7xl mx-auto px-4 lg:px-8 py-16 space-y-8">
+    <section>
       {/* == FLEX CONTAINER: content left, image right == */}
-      <div className="flex flex-col  laptop:flex-row-reverse items-center gap-8">
+      <div className="flex flex-col laptop:flex-row-reverse items-center gap-8">
         {/* == LEFT COLUMN: Text & Stats == */}
         <div className="flex-1 flex flex-col space-y-6">
           <p className="h6 text-accent tracking-widest uppercase">

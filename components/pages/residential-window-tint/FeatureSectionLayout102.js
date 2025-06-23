@@ -3,8 +3,8 @@ import CloudImage from "@/components/ui/CloudImage";
 
 export default function FeatureSectionLayout102() {
   return (
-    <section className="relative py-12 laptop:py-20">
-      <div className="max-w-7xl mx-auto flex flex-col items-center gap-12 px-6">
+    <section className="relative">
+      <div className="flex flex-col items-center gap-12 px-6">
         {/* Text Content */}
         <div className="flex-1 flex flex-col laptop:flex-row gap-8">
           <div className="flex-1">

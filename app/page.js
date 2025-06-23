@@ -5,6 +5,7 @@ import BenefitsSection from "@/components/pages/home-page/BenefitsSection";
 import StatsSection from "@/components/pages/home-page/StatsSection";
 import ContactSection from "@/components/pages/home-page/ContactSection";
 import { Contact } from "lucide-react";
+import PatternBackground from "@/components/ui/PatternBackground";
 
 export const metadata = {
   title: "Auto, Home & Commercial Tinting Chattanooga | MAD Tintz",
@@ -14,13 +15,17 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <>
+    <PatternBackground
+      variant="stripes"
+      speed={0.5}
+      patternColorClass="text-accent/3"
+    >
       <Hero />
       <FeatureListSection />
       <FeatureSection />
       <BenefitsSection />
       <StatsSection />
       <ContactSection />
-    </>
+    </PatternBackground>
   );
 }

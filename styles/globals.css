@@ -83,13 +83,19 @@
            desktop:text-lg  /* 18px */
            leading-snug
            tracking-wide
-           text-gray-600;
+          
   }
+  
+  p { @apply  text-gray-600;}
+
   main {
     @apply min-h-screen;
   }
   section {
-    @apply w-full;
+    @apply w-full px-[2%] tablet:px-[5%] py-24;
+  }
+  container {
+    @apply space-y-8;
   }
 }
 

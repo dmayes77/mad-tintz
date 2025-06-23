@@ -40,13 +40,15 @@ const content = {
 
 export default function FeatureListSection() {
   return (
-    <section className="max-w-7xl mx-auto px-4 lg:px-8 py-16 space-y-8">
-      {/* Section Title */}
-      <FeatureList
-        title={content.title}
-        description={content.description}
-        cards={content.cards}
-      />
+    <section>
+      <div>
+        {/* Section Title */}
+        <FeatureList
+          title={content.title}
+          description={content.description}
+          cards={content.cards}
+        />
+      </div>
     </section>
   );
 }
